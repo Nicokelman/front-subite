@@ -1,0 +1,604 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    height: 100vh;
+    text-align: center;
+    font-family: sans-serif;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+    background: #D8BB5A;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 75px;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a {
+    display: block;
+    padding: 80px 100px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.navbar a:hover {
+    background: #bda040;
+}
+
+p{
+    margin-right: 30px;
+    width: 200px;
+    height: 130px;
+    color: #E1DADA;
+    font-size: 40px;
+}
+
+.A ul{
+    height: 20px;
+    width: 20px;
+    margin-left: 1500px;
+    margin-top: 850px;
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    justify-content:space-between;
+}
+.Lineas {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    margin-right: 850px;
+}
+
+.content {
+    /* height: 65vh; */
+    margin-top: 250px;
+    margin-left: 910px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.lineas{
+    text-align: center;
+    justify-content: space-between;
+    margin-left: 150px;
+}
+
+.recorridos{
+    display: flex;
+    flex-direction: row;
+}
+
+.btnContinuar {
+    margin-left: 660px;
+    margin-top: 620px; 
+	overflow:hidden;
+}
+.btnContinuar { 
+	width:735px;
+	height:122px;
+	position:absolute;
+}
+.btn { 
+	background-color:rgba(216.00000232458115, 187.00000405311584, 90.00000223517418, 1);
+	width:735px;
+	height:122px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.Continuar { 
+	color:rgba(5.312500158324838, 4.08978134393692, 0, 1);
+	width:394px;
+	height:69px;
+	position:absolute;
+	left:171px;
+	top:27px;
+	font-family:Inter;
+	text-align:left;
+	font-size:64px;
+	letter-spacing:0;
+}
+
+.LineasDesplegables{
+    display: flex;
+    flex-direction: row;
+    margin-left: 195px;   
+}
+
+.LineaDesplegable1{
+    margin-top: 370px;
+    margin-right: 500px;
+}
+
+.LineaDesplegable1{ 
+	overflow:hidden;
+}
+.LineaDesplegable1{ 
+	width:280.45654296875px;
+	height:127.99772644042969px;
+    position:absolute;
+}
+.RecGris1 { 
+	background-color:rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
+	width:280.45654296875px;
+	height:150px;
+	left:0px;
+	top:45.35772705078125px;
+}
+.e70_32 { 
+	transform: rotate(179.28247544669645deg);
+	background-color:rgba(176.37499898672104, 154.32812601327896, 154.32812601327896, 1);
+	width:27.060956954956055px;
+	height:23.724748611450195px;
+	position:absolute;
+	left:246.3983154296875px;
+	top:95.9600601196289px;
+}
+.RecBlanco1 { 
+	background-color:rgba(255, 250.75000405311584, 250.75000405311584, 1);
+	width:280px;
+	height:45px;
+	position:absolute;
+	left:0px;
+	top:1px;
+}
+.txtLinea { 
+	color:rgba(0, 0, 0, 1);
+	width:126px;
+	height:36.40690231323242px;
+	position:absolute;
+	left:83px;
+	top:0px;
+	font-family:Inter;
+	text-align:left;
+	font-size:40px;
+	letter-spacing:0;
+}
+
+.SeleccioneLin{
+    color:rgb(0, 0, 0);
+    width:188px;
+    height:29.460317611694336px;
+    position:absolute;
+    top:0px;
+    font-family:Inter;
+    font-size:40px;
+    letter-spacing:0;
+    margin-top: 217px;
+    margin-left: 70px;
+}
+
+.LineaDesplegable2 {
+    margin-top: 370px;
+    margin-left: 400px;
+}
+.LineaDesplegable2 { 
+	overflow:hidden;
+}
+.LineaDesplegable2 { 
+	width:580px;
+	height:128px;
+	position:absolute;
+}
+.RecGris2 { 
+	background-color:rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
+	width:579.671630859375px;
+	height:150px;
+	left:0px;
+	top:44.29667663574219px;
+}
+.e70_27 { 
+	transform: rotate(179.31714977989847deg);
+	background-color:rgba(176.37499898672104, 154.32812601327896, 154.32812601327896, 1);
+	width:27.000059127807617px;
+	height:23.36496353149414px;
+	position:absolute;
+	left:533.19970703125px;
+	top:92.48478698730469px;
+}
+.RecBlanco2{ 
+	background-color:rgba(255, 250.75000405311584, 250.75000405311584, 1);
+	width:580px;
+	height:45.71427536010742px;
+	position:absolute;
+	left:0px;
+	top:1.0158727169036865px;
+}
+.txtDesde { 
+	color:rgba(0, 0, 0, 1);
+	width:171px;
+	height:29.460309982299805px;
+	position:absolute;
+	left:231px;
+	top:0px;
+	font-family:Inter;
+	text-align:left;
+	font-size:40px;
+	letter-spacing:0;
+}
+
+.SeleccioneDes{
+    color:rgb(0, 0, 0);
+    width:100px;
+    height:30;
+    top:0px;
+    position: absolute;
+    font-family:Inter;
+    font-size:40px;
+    letter-spacing:0;
+    margin-top: 217px;
+    margin-left: 370px;
+}
+
+.LineaDesplegable3{
+    margin-top: 370px;
+    margin-left: 1100px;
+}
+.LineaDesplegable3{
+    overflow:hidden;
+}
+.LineaDesplegable3 {
+    width:581px;
+    height:128px;
+    position:absolute;
+}
+.RecGris3{
+    background-color:rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
+    width:580.7631225585938px;
+    height:150px;
+    left:0px;
+    top:45.01215362548828px;
+}
+.e70_22 {
+    transform: rotate(179.32425829112805deg);
+    background-color:rgba(176.37499898672104, 154.32812601327896, 154.32812601327896, 1);
+    width:27.000059127807617px;
+    height:23.364967346191406px;
+    position:absolute;
+    left:534.20361328125px;
+    top:95.81864166259766px;
+}
+.RecBlanco3{
+    background-color:rgba(255, 250.75000405311584, 250.75000405311584, 1);
+    width:581px;
+    height:45.71428680419922px;
+    position:absolute;
+    left:0px;
+    top:0px;
+}
+.txtHacia{
+    color:rgba(0, 0, 0, 1);
+    width:188px;
+    height:29.460317611694336px;
+    position:absolute;
+    left:236px;
+    top:0px;
+    font-family:Inter;
+    text-align:left;
+    font-size:40px;
+    letter-spacing:0;
+}
+
+.SeleccioneHac{
+    color:rgb(0, 0, 0);
+    width:188px;
+    height:29.460317611694336px;
+    position:absolute;
+    top:0px;
+    font-family:Inter;
+    font-size:40px;
+    letter-spacing:0;
+    margin-top: 217px;
+    margin-left: 695px;
+}
+
+.ProxTren{ 
+	overflow:hidden;
+    margin-top: 280px;
+    margin-left: 100px;
+}
+.ProxTren{ 
+	width:834px;
+	height:78px;
+	position:absolute;
+}
+.RecProxTr { 
+	background-color:rgba(232.68750607967377, 228.80937337875366, 228.80937337875366, 1);
+	width:700px;
+	height:76px;
+	position:absolute;
+	left:0px;
+	top:2px;
+}
+.TxtNumTr { 
+	color:rgba(0, 0, 0, 1);
+	width:298px;
+	height:71px;
+	position:absolute;
+	left:400px;
+	top:3px;
+	font-family:Inter;
+	text-align:left;
+	font-size:64px;
+	letter-spacing:0;
+}
+.TxtProxTr { 
+	color:rgba(3.1875000474974513, 3.1875000474974513, 3.1875000474974513, 1);
+	width:428px;
+	height:76px;
+	position:absolute;
+	left:8px;
+	top:5px;
+	font-family:Inter;
+	text-align:left;
+	font-size:60px;
+	letter-spacing:0;
+}
+
+.RecVagonOne{
+    margin-top: 420px;
+    margin-left: 150px;
+    background-color:rgba(232.68750607967377, 228.80937337875366, 228.80937337875366, 1);
+	width:350px;
+	height:200px;
+	left:0px;
+	top:2px;
+}
+
+.RecVagonTwo{
+    margin-top: -200px;
+    margin-left: 600px;
+    background-color:rgba(232.68750607967377, 228.80937337875366, 228.80937337875366, 1);
+	width:350px;
+	height:200px;
+	left:0px;
+	top:2px;
+}
+
+.RecVagonThree{
+    margin-top: -200px;
+    margin-left: 1050px;
+    background-color:rgba(232.68750607967377, 228.80937337875366, 228.80937337875366, 1);
+	width:350px;
+	height:200px;
+	left:0px;
+	top:2px;
+}
+
+.RecVagonFour{
+    margin-top: -200px;
+    margin-left: 1500px;
+    background-color:rgba(232.68750607967377, 228.80937337875366, 228.80937337875366, 1);
+	width:350px;
+	height:200px;
+	left:0px;
+	top:2px;
+}
+
+.RecVagonFive{
+    margin-top: 70px;
+    margin-left: 150px;
+    background-color:rgba(232.68750607967377, 228.80937337875366, 228.80937337875366, 1);
+	width:350px;
+	height:200px;
+	left:0px;
+	top:2px;
+}
+
+.RecVagonSix{
+    margin-top: -200px;
+    margin-left: 600px;
+    background-color:rgba(232.68750607967377, 228.80937337875366, 228.80937337875366, 1);
+	width:350px;
+	height:200px;
+	left:0px;
+	top:2px;
+}
+
+.RecVagonSeven{
+    margin-top: -200px;
+    margin-left: 1050px;
+    background-color:rgba(232.68750607967377, 228.80937337875366, 228.80937337875366, 1);
+	width:350px;
+	height:200px;
+	left:0px;
+	top:2px;
+}
+
+.RecVagonEight{
+    margin-top: -200px;
+    margin-left: 1500px;
+    background-color:rgba(232.68750607967377, 228.80937337875366, 228.80937337875366, 1);
+	width:350px;
+	height:200px;
+	left:0px;
+	top:2px;
+}
+
+.HeaderTitulo{
+    width: 200px;
+    height: 50px;
+    margin-left: 73px;
+    font-family:Inter;
+    color: #000000;
+    font-size: 40px;
+    background: #D8BB5A;
+}
+
+.VagPerOne{
+    margin-right: 25px;
+    margin-top: 15px;
+    height: 50px;
+    width: 45px;
+    margin-left: 6px;
+}
+
+#NumPerOne{
+    color:#000000;
+	width:20px;
+	height:20px;
+    top: 0px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:left;
+	font-size: 30px;
+    margin-right: 10px;
+}
+
+.VagTemOne{
+    margin-right: 15px;
+    margin-top: 5px;
+    height: 50px;
+    width: 45px;
+}
+
+#NumTemOne{
+    color:#000000;
+	width:20px;
+	height:20px;
+    top: 0px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:left;
+	font-size: 30px;
+    margin-right: 15px;
+}
+
+.VagSonOne{
+    margin-right: 15px;
+    margin-top: 5px;
+    height: 50px;
+    width: 45px;
+}
+
+#NumSonOne{
+    color:#000000;
+	width:20px;
+	height:20px;
+    top: 0px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:left;
+	font-size: 30px;
+    margin-right: 15px;
+}
+
+.VagGotaOne{
+    margin-right: 15px;
+    margin-top: 10px;
+    height: 50px;
+    width: 45px;
+}
+
+#NumGotaOne{
+    color:#000000;
+	width:20px;
+	height:20px;
+    top: 0px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:left;
+	font-size: 30px;
+    margin-right: 15px;
+}
+
+.VagOxyOne{
+    margin-right: 15px;
+    margin-top: 10px;
+    height: 50px;
+    width: 45px;
+    margin-left: 15px;
+}
+
+#NumOxyOne{
+    color:#000000;
+	width:20px;
+	height:20px;
+    top: 0px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:left;
+	font-size: 30px;
+    margin-right: 15px;
+}
+
+.RecAyuda{
+    background-color:rgba(232.68750607967377, 228.80937337875366, 228.80937337875366, 1);
+	width:1600px;
+	height:600px;
+	position:absolute;
+	margin-left: 210px;
+	margin-top: 300px;
+}
+
+.AyuLin{
+    margin-top: 35px;
+    margin-left: 50px;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    width:1500px;
+	height:100px;
+}
+
+.AyuDes{
+    margin-top: 0px;
+    margin-left: 50px;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    width:1500px;
+	height:100px;
+}
+
+.AyuHac{
+    margin-top: 0px;
+    margin-left: 50px;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    width:1500px;
+	height:100px;
+}
+
+.AyuCont{
+    margin-top: 0px;
+    margin-left: 50px;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    width:1500px;
+	height:100px;
+}
