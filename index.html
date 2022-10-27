@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+  
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
   </div>
 
   <nav class="navbar">
-    <a href="index.php">Inicio</a>
+    <a href="index.html">Inicio</a>
     <a href="lineas.html">Lineas</a>
     <a href="Ayuda.html">Ayuda</a>
   </nav>
@@ -53,15 +53,28 @@
 </div>
 
 <div class="SeleccioneLin">
-  <span  class="SeleccioneLin"><a href="#"><span class="ListaL">Seleccione...</a></span>
+  <select id="drop_lineas" onchange="seleccionaLinea(this)">
+    <option value="Seleccione">Seleccione</option>
+    <option value="lineaA">Linea A</option>
+    <option value="lineaB">Linea B</option>
+    <option value="lineaC">Linea C</option>
+    <option value="lineaD">Linea D</option>
+    <option value="lineaE">Linea E</option>
+    <option value="lineaH">Linea H</option>
+    
+  </select>
 </div>
 
 <div class="SeleccioneDes">
-  <span  class="SeleccioneDes"><a href="#"><span class="ListaD">Seleccione...</a></span>
+  <select id="drop_lineas" onchange="seleccionaLinea(this)">
+    <option value="Seleccione"></option>
+  </select>
 </div>
 
 <div class="SeleccioneHac">
-  <span  class="SeleccioneHac"><a href="#"><span class="ListaH">Seleccione...</a></span>
+  <select id="drop_lineas" onchange="seleccionaLinea(this)">
+    <option value="Seleccione"></option>
+  </select>
 </div>
 
 <div class= "btnContinuar">
@@ -80,6 +93,26 @@
   </div>
 
 </main>
+<script>
 
+var server = "http://localhost:5000";
+
+function seleccionaLinea(lineas){
+  console.log(lineas)
+  console.log(lineas.selectedIndex)
+  console.log(lineas.options)
+  var linea = lineas.options[lineas.selectedIndex].value
+  console.log(linea.value)
+  fetch(server+"/"+linea).then(res => {
+    // De la res que llega del back
+    // Relleno el dropdown que tiene id drop_estaciones
+    var dropdownEstaciones = document.querySelector("#drop_estaciones");
+
+    // por cada estacion de la res
+      // creo una option con la estacion
+      // la agrego a dropdownEstaciones
+  })
+}
+</script>
 </body>
 </html>
