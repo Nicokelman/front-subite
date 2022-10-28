@@ -109,11 +109,13 @@ p{
     margin-left: 660px;
     margin-top: 620px; 
 	overflow:hidden;
+    cursor: pointer;
 }
 .btnContinuar { 
 	width:735px;
 	height:122px;
 	position:absolute;
+    cursor: pointer;
 }
 .btn { 
 	background-color:rgba(216.00000232458115, 187.00000405311584, 90.00000223517418, 1);
@@ -134,6 +136,7 @@ p{
 	text-align:left;
 	font-size:64px;
 	letter-spacing:0;
+    cursor: pointer;
 }
 
 .LineasDesplegables{
@@ -262,7 +265,7 @@ p{
     font-family:Inter;
     font-size:51px;
     margin-top: 420px;
-    margin-left: 1050px;
+    margin-left: 530px;
 }
 
 .LineaDesplegable3{

@@ -66,19 +66,19 @@
 </div>
 
 <div class="SeleccioneDes">
-  <select id="drop_lineas" onchange="seleccionaLinea(this)">
+  <select id="drop_estaciones" onchange="seleccionaEstacion()">
     <option value="Seleccione"></option>
   </select>
 </div>
 
 <div class="SeleccioneHac">
-  <select id="drop_lineas" onchange="seleccionaLinea(this)">
+  <select id="drop_terminales" onchange="seleccionaTerminal(this)">
     <option value="Seleccione"></option>
   </select>
 </div>
 
 <div class= "btnContinuar">
-  <div class="btn"></div><a href="Proximotren.html"><span class="Continuar">CONTINUAR</span></a>
+  <div class="btn"></div><button onclick="continuar()"><span class="Continuar">CONTINUAR</span></button>
 </div>
 
   <div class= "A">
@@ -95,24 +95,62 @@
 </main>
 <script>
 
-var server = "http://localhost:5000";
+var server = "";
+
+function fillselect(selectobj, options){
+  selectobj.innerHTML = "";
+  console.log({selectobj, options});
+  options.forEach(element => {
+    var opt = document.createElement('option');
+    opt.value = element.Estaciones;
+    opt.innerHTML = element.Estaciones;
+    selectobj.appendChild(opt);
+  });
+}
+
+var terminales;
 
 function seleccionaLinea(lineas){
+  var selectTerminales = document.querySelector("#drop_terminales");
+  selectTerminales.innerHTML = "";
   console.log(lineas)
   console.log(lineas.selectedIndex)
   console.log(lineas.options)
   var linea = lineas.options[lineas.selectedIndex].value
   console.log(linea.value)
-  fetch(server+"/"+linea).then(res => {
+  fetch(server+"/"+linea).then(tex => tex.json()).then(res => {
     // De la res que llega del back
     // Relleno el dropdown que tiene id drop_estaciones
-    var dropdownEstaciones = document.querySelector("#drop_estaciones");
-
     // por cada estacion de la res
       // creo una option con la estacion
       // la agrego a dropdownEstaciones
+      var selectEstaciones = document.querySelector("#drop_estaciones");
+      fillselect(selectEstaciones, res)
+      terminales = [res.at(0), res.at(-1)];
+
   })
 }
+
+function seleccionaEstacion(a){
+  var selectTerminales = document.querySelector("#drop_terminales");
+  fillselect(selectTerminales, terminales);
+}
+
+function continuar(){
+  var selectLineas = document.querySelector("#drop_lineas");
+  var selectEstaciones = document.querySelector("#drop_estaciones");
+  var selectTerminales = document.querySelector("#drop_terminales");
+
+  var linea = selectLineas.options[selectLineas.selectedIndex].value
+  var estacion = selectEstaciones.options[selectEstaciones.selectedIndex].value
+  var terminal = selectTerminales.options[selectTerminales.selectedIndex].value
+  
+  if (linea != "Seleccione" && estacion != "Seleccione" && terminal != "Seleccione"){
+    console.log({linea, estacion, terminal})
+    window.location.href = "/tren?linea=" + linea + "&estacion=" + estacion + "&terminal=" + terminal;
+  }
+}
+
 </script>
 </body>
 </html>
