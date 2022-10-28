@@ -156,6 +156,13 @@
         <img class = "VagOxyOne" src = "Vagones/Sonidoo.webp"><label for="NumOxyOne" id = "NumOxyOne">19</label>
         </div>
     </section>
-
-
 </main>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  var linea = params.getAll("linea")[0]
+  var estacion = params.getAll("estacion")[0]
+  var terminal = params.getAll("terminal")[0]
+  console.log({linea, estacion, terminal})
+</script>
+</body>
+</html>
